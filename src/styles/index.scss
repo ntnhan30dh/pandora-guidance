@@ -1,0 +1,205 @@
+// fonts
+
+@font-face {
+  font-family: "Corpid C1s";
+  src: url("../fonts/corpidc1s-regular-webfont.eot?") format("eot"),
+    url("../fonts/corpidc1s-regular-webfont.woff") format("woff"),
+    url("../fonts/corpidc1s-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Corpid C1s Bold";
+  src: url("../fonts/corpidc1s-bold-webfont.eot?") format("eot"),
+    url("../fonts/corpidc1s-bold-webfont.woff") format("woff"),
+    url("../fonts/corpidc1s-bold-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Corpid C1s Bold Italic";
+  src: url("../fonts/corpidc1s-bolditalic-webfont.eot?") format("eot"),
+    url("../fonts/corpidc1s-bolditalic-webfont.woff") format("woff"),
+    url("../fonts/corpidc1s-bolditalic-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Corpid C1s Heavy";
+  src: url("../fonts/corpidc1s-heavy-webfont.eot?") format("eot"),
+    url("../fonts/corpidc1s-heavy-webfont.woff") format("woff"),
+    url("../fonts/corpidc1s-heavy-webfont.ttf") format("truetype");
+}
+html,
+body {
+  // overflow-x: hidden;
+  // background-color: aqua;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Corpid C1s", sans-serif !important;
+  height: unset !important;
+}
+
+h1 {
+  font-family: "Corpid C1s Bold", sans-serif !important;
+
+}
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Corpid C1s ", sans-serif !important;
+}
+
+
+
+
+.leading-100 {
+  line-height: 100%;
+}
+
+.leading-160 {
+  line-height: 160% !important;
+}
+// header
+
+img{
+ width: 100% !important;
+}
+.headerWrapper {
+  .burgerMenu {
+   // display: none;
+  // background-color: #FDD040;
+
+    cursor: pointer;
+    @media screen and (max-width: 639px) {
+      display: inline;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 25px;
+      height: 3px;
+     // background-color: #272CC0;
+      background-color: #FFFFFF;
+   //  border: 1px solid #FDD040;
+      margin: 3px 0;
+      transition: 0.4s;
+    }
+    
+  }
+
+  .change {
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      background-color: black;
+    }
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 3px);
+      transform: rotate(-45deg) translate(-4px, 3px);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-5px, -4px);
+    }
+  }
+
+  .is-inactive {
+    display: inline-flex;
+  }
+}
+
+// universal
+.px-universal {
+  padding: 0 3%;
+}
+
+.pl-universal {
+  padding-left: 3%;
+}
+
+
+
+
+
+
+
+.leading1{
+  line-height: 1 !important;
+
+}
+
+.spin {
+  animation: spin 10s linear infinite forwards;
+}
+
+.layout3Slide {
+  .name{
+    display: none ;
+  }
+  .nameS{
+    display: none !important;
+  }
+
+       
+  .slick-current {   
+    .name {
+     opacity: 1 !important;
+    display: block;
+    width: 200%;
+   margin-left: -50%;
+   white-space: nowrap;
+   text-align: center;
+    }
+    .stars{
+      display: flex
+    }
+
+  }
+
+  .slick-slider {
+    .pic {
+      border: none;
+    }
+  }
+}
+
+
+
+ @keyframes ani {
+   0% {
+     background-position:0 0;
+   }
+   100% {
+     background-position: 100vw 0;
+   }
+ }
+
+
+
+ .menuItemName{
+   color: #272CC0;
+   font-size: 30px;
+text-shadow: 0px 2px 0px #FFFFFF;
+   @media screen and (min-width: 768px) {
+     font-size: 54px;
+     text-shadow: 2px 3px 0px #FFFFFF; 
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 67px;
+    text-shadow: 3px 4px 0px #FFFFFF; 
+ }
+ }
+
+ .ui.button{
+  background:transparent !important;
+  }
