@@ -9,6 +9,7 @@ import '../styles/global.css';
 import Header from "../components/header"
 import Story from "../components/story"
 import What from "../components/what"
+import Why from "../components/why"
 
 
 // const codeStyles = {
@@ -41,6 +42,7 @@ const IndexPage = () => {
    
     <Story/>
     <What textStyle={text} pxStyle={px}/>
+    <Why textStyle={text} pxStyle={px}/>
    
    
     </div>
