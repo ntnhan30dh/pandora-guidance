@@ -5,7 +5,7 @@ import why_mobile from "../images/why_mobile.png";
 
 const Why = (props) => {
   return (
-    <section className="What relative bg-green">
+    <section className="What relative bg-green" id='why'>
     <div className={`text text-center md:text-left md:pt-24 ${props.pxStyle}`}>
         <h2 className={` ${props.textStyle.h2} py-10`}>Why do we need a platform guidance? </h2>
         <div className="w-3/4 mx-auto">

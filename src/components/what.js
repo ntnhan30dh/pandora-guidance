@@ -6,7 +6,7 @@ import brands from "../images/brands.png";
 
 const What = (props) => {
   return (
-    <section className={`What relative bg-pink ${props.pxStyle}`}>
+    <section className={`What relative bg-pink ${props.pxStyle}`} id='what'>
       <div className="text text-center md:text-left md:pt-24">
         <h2 className={`text-white ${props.textStyle.h2} py-10`}>What is Pandora?</h2>
         <div className="w-3/4 mx-auto">
