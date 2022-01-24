@@ -1,9 +1,9 @@
 {
-  "name": "Pandora Guidance",
+  "name": "pandora guidance",
   "version": "1.0.0",
   "private": true,
-  "description": "Pandora Guidance",
-  "author": "Nhan Nguyen",
+  "description": "pandora guidance",
+  "author": "nhan nguyen",
   "keywords": [
     "gatsby"
   ],
