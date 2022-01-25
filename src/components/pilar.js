@@ -81,10 +81,10 @@ We celebrate failures and successes with the same intensity as they are the two 
     <article className={`pilar relative `}>
       <div className="border-b-2 border-pink pb-6 md:my-16 md:mx-20 mt-10">
         <button
-          className=" nameDiv "
+          className=" nameDiv w-full "
           onClick={() => setShow(!show)}
         >
-      <div className=" relative flex items-center justify-between ">
+      <div className=" relative flex items-center justify-between md:justify-start ">
           <div className="w-4 mx-4">
             <img
               src={off}

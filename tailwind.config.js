@@ -116,6 +116,11 @@ module.exports = {
       6: "6px",
       8: "8px",
     },
+
+    borderRadius: {
+      ...defaultTheme.borderRadius,
+      'custom': '53px',
+    }
    
   },
   variants: {

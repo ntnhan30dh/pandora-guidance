@@ -11,15 +11,10 @@ import Story from "../components/story"
 import What from "../components/what"
 import Why from "../components/why"
 import Strategy from "../components/strategy"
+import Principle from "../components/principle"
 
 
-// const codeStyles = {
-//   //color: "#8A6534",
-//   padding: 4,
-//   backgroundColor: "#FFF4DB",
-//   fontSize: "1.25rem",
-//   borderRadius: 4,
-// }
+
 
 const IndexPage = () => {
 
@@ -30,7 +25,7 @@ const IndexPage = () => {
 
     const text = {
       h2: "text-4xl md:text-6xl lg:text-8xl", 
-      p: "text-lg md:text-xl lg:text-3xl",
+      p: "text-lg md:text-xl lg:text-2xl",
     }
   
     const px = "px-1/10"
@@ -45,6 +40,7 @@ const IndexPage = () => {
     <What textStyle={text} pxStyle={px}/>
     <Why textStyle={text} pxStyle={px}/>
     <Strategy textStyle={text} pxStyle={px}/>
+    <Principle textStyle={text} pxStyle={px}/>
    
     
     </div>
