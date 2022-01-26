@@ -46,10 +46,10 @@ const IndexPage = () => {
       <title>Pandora Guidance</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/> 
-    <div className="py-20">
+    {/* <div className="py-20">
 
     <Logout setLoginState={setLoginState} />
-    </div>
+    </div> */}
 
     <Story/>
     <What textStyle={text} pxStyle={px}/>
