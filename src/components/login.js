@@ -19,8 +19,8 @@ const Login = (props) => {
   })
     return (
       
-      <div>
-        <button onClick={loginHandle} className="text-black"> Login</button>
+      <div className="h-screen w-screen flex">
+        <button onClick={loginHandle} className="text-black m-auto bg-green px-10 py-4 rounded-custom"> <h2> Login</h2></button>
       </div> 
     );
   

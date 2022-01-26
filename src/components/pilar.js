@@ -84,7 +84,7 @@ We celebrate failures and successes with the same intensity as they are the two 
           className=" nameDiv w-full "
           onClick={() => setShow(!show)}
         >
-      <div className=" relative flex items-center justify-between md:justify-start ">
+      <div className=" relative flex items-center /justify-between /md:justify-start ">
           <div className="w-4 mx-4">
             <img
               src={off}
@@ -92,9 +92,8 @@ We celebrate failures and successes with the same intensity as they are the two 
               className={`w-full transform ${rotate}`}
             />
           </div>
-          <div>
-
-          <h4 className="text-xl md:text-5xl text-left"> {props.name}</h4>
+          <div className="w-4/5 lg:w-full text-center lg:text-left">
+          <h4 className="text-xl md:text-5xl "> {props.name}</h4>
           </div>
           
       </div>

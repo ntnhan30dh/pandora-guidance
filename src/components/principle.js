@@ -3,7 +3,7 @@ import Item from './principle_item'
 
 const Principle = (props) => {
   return (
-    <section className={`principle bg-green ${props.pxStyle}`} id='principle'>
+    <section className={`principle bg-green ${props.pxStyle} md:py-20`} id='principle'>
     <h2 className={` ${props.textStyle.h2} py-10`}>Our Principles </h2>
     <div className="items">
       <div className=" lg:flex items-start">
