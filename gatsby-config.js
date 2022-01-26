@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "Pandora Guidance",
@@ -35,6 +39,13 @@ module.exports = {
       },
     },
 
-    'gatsby-plugin-postcss'
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://apis.google.com/js/platform.js',
+      
+      }
+      },
   ],
 };
