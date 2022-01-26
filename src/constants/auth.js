@@ -73,19 +73,21 @@ class Auth {
   }
 
   isAuthenticated() {
-    console.log("isAuthenticated is callled");
-    if (!localStorage.getItem("expires_at")) {
-      return false;
+    if (localStorage) {
+      console.log("isAuthenticated is callled");
+      if (!localStorage.getItem("expires_at")) {
+        return false;
+      }
+      // Check whether the current time is past the
+      // access token's expiry time
+      let expiresAt = JSON.parse(localStorage.getItem("expires_at"));
+      let thisDate = Math.floor(Date.now() / 1000);
+      let result = thisDate < expiresAt ? true : false;
+      // console.log("thisDate", thisDate);
+      // console.log("expiresAt", expiresAt);
+      return result;
     }
-    // Check whether the current time is past the
-    // access token's expiry time
-    let expiresAt = JSON.parse(localStorage.getItem("expires_at"));
-    let thisDate = Math.floor(Date.now() / 1000);
-    let result = thisDate < expiresAt ? true : false;
-    // console.log("thisDate", thisDate);
-    // console.log("expiresAt", expiresAt);
 
-    return result;
   }
 
 }
