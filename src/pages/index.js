@@ -39,6 +39,9 @@ const IndexPage = () => {
     }
   
     const px = "px-1/10"
+    if (!window) {
+      require('localstorage-polyfill');
+  }
   return (
     
     isAuthenticated ? <div className="pageWrapper ">    
