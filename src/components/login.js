@@ -9,13 +9,15 @@ const Login = (props) => {
   props.setLoginState()
   }
   useEffect( () => {
-    window.gapi.load('auth2', () => {
-            window.gapi.auth2.init({
-            client_id: process.env.GATSBY_APP_CLIENT_ID
-        }).then(() => (error) => {
-          console.log(error)
-         }) 
-        }) 
+    if (localStorage){
+      window.gapi.load('auth2', () => {
+              window.gapi.auth2.init({
+              client_id: process.env.GATSBY_APP_CLIENT_ID
+          }).then(() => (error) => {
+            console.log(error)
+           }) 
+          }) 
+    }
   })
     return (
       
