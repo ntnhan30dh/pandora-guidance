@@ -73,7 +73,7 @@ class Auth {
   }
 
   isAuthenticated() {
-    if (localStorage) {
+    
       console.log("isAuthenticated is callled");
       if (!localStorage.getItem("expires_at")) {
         return false;
@@ -86,7 +86,7 @@ class Auth {
       // console.log("thisDate", thisDate);
       // console.log("expiresAt", expiresAt);
       return result;
-    }
+  
 
   }
 

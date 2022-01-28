@@ -21,8 +21,7 @@ import Principle from "../components/principle"
 
 const auth = new Auth();
 const IndexPage = () => {
-
-  let [isAuthenticated, setstate] = useState(auth.isAuthenticated());
+  let [isAuthenticated, setstate] = useState( typeof window !== 'undefined'? auth.isAuthenticated() : false );
 
   const setLoginState = () => {
     setstate(auth.isAuthenticated());
@@ -44,15 +43,15 @@ const IndexPage = () => {
   // }
   return (
     
-    isAuthenticated ? <div className="pageWrapper ">    
+   isAuthenticated ? 
+    <div className="pageWrapper ">    
     <head>
       <title>Pandora Guidance</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/> 
-    <div className="py-20">
-
+    {/* <div className="py-20">
     <Logout setLoginState={setLoginState} />
-    </div>
+    </div> */}
 
     <Story/>
     <What textStyle={text} pxStyle={px}/>
@@ -60,7 +59,8 @@ const IndexPage = () => {
     <Strategy textStyle={text} pxStyle={px}/>
     <Principle textStyle={text} pxStyle={px}/>  
     
-    </div> : <Login setLoginState={setLoginState} /> 
+    </div> 
+    : <Login setLoginState={setLoginState} /> 
   )
 }
 

@@ -9,7 +9,6 @@ const Login = (props) => {
   props.setLoginState()
   }
   useEffect( () => {
-    if (localStorage){
       window.gapi.load('auth2', () => {
               window.gapi.auth2.init({
               client_id: process.env.GATSBY_APP_CLIENT_ID
@@ -17,11 +16,11 @@ const Login = (props) => {
             console.log(error)
            }) 
           }) 
-    }
+    
   })
     return (
       
-     window && <div className="h-screen w-screen flex">
+      (typeof window !== 'undefined') && <div className="h-screen w-screen flex">
         <button onClick={loginHandle} className="text-black m-auto bg-green px-10 py-4 rounded-custom"> <h2> Login</h2></button>
       </div>
     )
