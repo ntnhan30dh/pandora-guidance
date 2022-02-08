@@ -13,7 +13,7 @@ const Pilar = (props) => {
 
   const pic = {
     "Quality" : quality,
-    "Customers’ obsession / Contextualization" : obsession,
+    "Customer obsession" : obsession,
     "Platform" : platform,
     "Team" : team
   }
@@ -25,28 +25,40 @@ const Pilar = (props) => {
         by shipping high-quality new products continuously and fixing broken
         windows. <br /> <br />
         Broken windows are small customer experience issues that, if multiplied,
-        significantly erode the customer trust. If you encounter a broken
-        window, it’s your job to fix it even if you had nothing to do with the
-        broken window. <br />
+        significantly erode customer trust. If you encounter a broken
+        window, it’sour responsibility to fix it so that our customers' trust is not affected. <br />
         It’s our responsibility to fix it so that our customers' trust is not
         affected. <br /> <br />
         We are obsessed with shipping an experience that is easy to use,
-        functional and that transpires love for the users in every single
-        detail. We make sure to guide the users through screens with very smooth
+        functional and transpires love for the user in every detail. We make sure to guide the users through screens with very smooth
         transitions, to deliver amazing moments through micro animations and
         videos, and we do all this without adding cognitive overload to the
-        users or making the applications slower
+        users or making the applications slower.
       </p>
     ),
- "Customers’ obsession / Contextualization" : <p>
-   We are building a global product, not just shipping a product globally. <br /> <br />
-
-We design and build for solving customer problems. <br />
-We don’t build everything for everyone.<br />
-We don’t think of location as our only customer dimension. <br />
-We optimise for the customer, not for the market.<br /><br />
-
+ "Customer obsession" : <p>
+   <ul className="list-disc">
+     <li>
+   We are building a global product, not just shipping a product globally.
+     </li>
+     <li>
+We design and build to solve customer problems. 
+     </li>
+     <li>
+We don’t build anything for anyone.
+     </li>
+     <li>
+We don’t think of location as our only customer dimension. 
+     </li>
+     <li>
+We optimise for the customer, not for the market.
+     </li>
+     <li>
 We strive for a one-to-one relationship with each customer, enabled by a global platform.
+     </li>
+   </ul>
+
+
 
  </p>,
      "Platform" : <p>
@@ -60,17 +72,10 @@ We build a playbook and a set of products that allows every platform to merge ef
 
      </p>,
      "Team" : <p>
-       We are building a product that people love, and we are happy while doing it.  In order to do that, we need a great team. <br /><br />
-
-We will need to continue growing our organisation while creating an environment where everyone can work towards their full potential. We are all involved in recruiting, and we continuously recruit to consistently bring fresh ideas and challenge the status quo. <br /><br />
-
-We want to work with people that are willing to take on challenges, have a sense of ownership, and are comfortable with ambiguity and change. <br /><br />
-
-We are looking to expand with talent that has had experience impacting customers at scale that has had exposure to great product culture. <br /><br />
-
-Great teams make great products. Great individuals do not necessarily make a great team. <br /><br />
-
-We celebrate failures and successes with the same intensity as they are the two sides of the same medal: learning.
+      We are building an awesome product that people love, and for us to continue growing, we are looking for more awesome teammates to join us on our mission. <br /> <br />
+      We are on the hunt for innovative people with fresh ideas who challenge the status quo. We want teammates who take on challenges, strive for a sense of ownership and are comfortable dealing with ambiguity and change. <br /> <br />
+      In our supportive work environment you will be encouraged to celebrate failures as well as successes, as they both take an equally important role of shaping our path. <br /> <br />
+      It’s true what they say, great teams make great products! 
 
      </p>
     

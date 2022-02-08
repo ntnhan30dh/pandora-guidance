@@ -1,10 +1,14 @@
 import React from "react";
 
+// import {useStyle} from '../components/styleContext'
+
 import what from "../images/what.png";
 import brands_mobile from "../images/brands_mobile.png";
 import brands from "../images/brands.png";
 
+
 const What = (props) => {
+ // const style = useStyle()
   return (
     <section className={`What relative bg-pink ${props.pxStyle}`} id='what'>
       <div className="text text-center md:text-left md:pt-24">
@@ -14,7 +18,7 @@ const What = (props) => {
       </div>
       <div className="md:flex">
       <p className={`text-white p-6 ${props.textStyle.p} my-10 md:p-0 md:w-2/3 md:pt-1/20 lg:pt-1/10 md:pr-1/20`}>
-      We have a fundamental belief that a single, common consumer platform can solve our consumer needs across a portfolio of brands and markets. We are helping DH to consolidate learnings, avoid unnecessary duplication of work, and therefore unlocking teams to address a wider area of opportunities. 
+      We have a fundamental belief that a single, common consumer platform can meet our consumers needs across a portfolio of brands and markets. We are helping Delivery Hero to consolidate learnings, avoid duplication of work, and therefore allow teams to address a wider area of opportunities.
       </p>
       <div className="w-1/3 mx-auto">
         <img src={what} alt="what" className=" w-full hidden md:block" />
