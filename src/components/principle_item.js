@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import pic1 from "../images/principle1.png";
 import pic3 from "../images/principle2.png";

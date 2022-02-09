@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useStyle} from '../components/styleContext'
 
 import off from "../images/off.png";
 import quality from "../images/quality.png";
@@ -7,8 +8,8 @@ import platform from "../images/platform.png";
 import team from "../images/team.png";
 
 const Pilar = (props) => {
+  const style = useStyle()
   const [show, setShow] = useState(props.state);
-
   const rotate = show ? "rotate-90" : "";
 
   const pic = {
@@ -104,7 +105,7 @@ We build a playbook and a set of products that allows every platform to merge ef
       </div>
         </button>
       </div>
-     { show && <div className={`text text-center md:text-left md:flex ${props.pxStyle} ${props.textStyle.p} my-10`}>
+     { show && <div className={`text text-center md:text-left md:flex ${style.px} ${style.text.p} my-10`}>
         <div className="md:w-2/3 md:pr-1/20 md:mt-10">
         { pText[props.name]}
         </div>

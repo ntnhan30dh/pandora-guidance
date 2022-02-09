@@ -1,4 +1,4 @@
-import React, { useContext }   from "react"
+import React   from "react"
 import logo from "../images/logo.png"
 import { Link } from "gatsby"
 import {useMenu, useMenuUpdate} from '../components/menuContext'

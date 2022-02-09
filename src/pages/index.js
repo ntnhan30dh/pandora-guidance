@@ -5,6 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 
 import {MenuProvider} from "../components/menuContext"
+import {StyleProvider} from "../components/styleContext"
 import Login from "../components/login";
 import Logout from "../components/logout";
 import Auth from "../constants/auth";
@@ -26,13 +27,6 @@ const IndexPage = () => {
   };
 
 
-    const text = {
-      h2: "text-4xl md:text-6xl lg:text-8xl", 
-      p: "text-lg md:text-xl lg:text-2xl",
-    }
-  
-    const px = "px-1/10"
- 
   return (
    isAuthenticated ? 
     <div className="pageWrapper ">    
@@ -46,10 +40,13 @@ const IndexPage = () => {
     <Logout setLoginState={setLoginState} />
     </div> */}
     <Story/>
-    <What textStyle={text} pxStyle={px}/>
-    <Why textStyle={text} pxStyle={px}/>
-    <Strategy textStyle={text} pxStyle={px}/>
-    <Principle textStyle={text} pxStyle={px}/>  
+    < StyleProvider> 
+    <What/>
+    <Why/>
+    <Strategy/>
+    <Principle/>  
+  </StyleProvider>
+    
     
     </div> 
     : <Login setLoginState={setLoginState} /> 
