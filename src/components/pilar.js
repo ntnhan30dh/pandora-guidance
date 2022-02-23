@@ -21,20 +21,11 @@ const Pilar = (props) => {
   const pText = {
     "Quality": (
       <p>
-        {" "}
-        We strive for perfection and constantly improve our customer experience
-        by shipping high-quality new products continuously and fixing broken
-        windows. <br /> <br />
-        Broken windows are small customer experience issues that, if multiplied,
-        significantly erode customer trust. If you encounter a broken
-        window, it’sour responsibility to fix it so that our customers' trust is not affected. <br />
-        It’s our responsibility to fix it so that our customers' trust is not
-        affected. <br /> <br />
-        We are obsessed with shipping an experience that is easy to use,
-        functional and transpires love for the user in every detail. We make sure to guide the users through screens with very smooth
-        transitions, to deliver amazing moments through micro animations and
-        videos, and we do all this without adding cognitive overload to the
-        users or making the applications slower.
+      We constantly improve our customer experience by delivering high-quality products and fixing broken windows. <br /> <br />
+
+Broken windows are small customer experience issues that, if multiplied, significantly erode customer trust. If you encounter a broken window, it’s our responsibility to fix it so that our customers' trust is not affected. <br /> <br />
+
+We are obsessed with shipping an experience that is easy to use, functional and transpires love for the user in every detail. We make sure to guide users through screens with very smooth transitions, to deliver amazing moments through micro animations and videos, and we do all this without adding cognitive overload to the users or making the applications slower. 
       </p>
     ),
  "Customer obsession" : <p>

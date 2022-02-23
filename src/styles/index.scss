@@ -203,3 +203,14 @@ text-shadow: 0px 2px 0px #FFFFFF;
  .ui.button{
   background:transparent !important;
   }
+
+  .storyDiv{
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(.6);
+  }
+
+  .opacity-100i{
+    opacity: 100 !important;
+  }

@@ -17,8 +17,7 @@ const style = useStyle()
       </div>
       <div className="md:flex">
       <p className={`text-white p-6 ${style.text.p} my-10 md:p-0 md:w-2/3 md:pt-1/20 lg:pt-1/10 md:pr-1/20`}>
-      We have a fundamental belief that a single, common consumer platform can meet our consumers needs across a portfolio of brands and markets. We are helping Delivery Hero to consolidate learnings, avoid duplication of work, and therefore allow teams to address a wider area of opportunities.
-      </p>
+      We have a fundamental belief that a single, common consumer platform can meet our consumers needs across a portfolio of brands and markets. We are helping Delivery Hero to consolidate learnings, avoid duplication of work, and allow teams to address a wider area of opportunities.      </p>
       <div className="w-1/3 mx-auto">
         <img src={what} alt="what" className=" w-full hidden md:block" />
       </div>
