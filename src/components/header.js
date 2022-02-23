@@ -12,7 +12,7 @@ const Header = (props) => {
   let change = menuState ? "change p-2 pr-3" : "";
   const link = " text-base sm:text-sm md:text-xl  font-semibold	 w-full  py-6  ";
   const link1 =
-    " text-base sm:text-sm md:text-xl  font-semibold	 /w-full  h-full opacity-60 hover:opacity-100 pt-4";
+    " text-base sm:text-sm md:text-xl  font-semibold	 /w-full  h-full opacity-60 hover:opacity-100 py-4";
   const span = "my-auto  text-black  hover:text-lipstick ";
   const span1 = "my-auto  text-white   h-full  ";
 
