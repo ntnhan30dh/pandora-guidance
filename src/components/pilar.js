@@ -14,7 +14,7 @@ const Pilar = (props) => {
 
   const pic = {
     "Quality" : quality,
-    "Customer obsession" : obsession,
+    "Consumer obsession" : obsession,
     "Platform" : platform,
     "Team" : team
   }
@@ -23,30 +23,30 @@ const Pilar = (props) => {
       <p>
       We constantly improve our customer experience by delivering high-quality products and fixing broken windows. <br /> <br />
 
-Broken windows are small customer experience issues that, if multiplied, significantly erode customer trust. If you encounter a broken window, it’s our responsibility to fix it so that our consumers' trust is not affected. <br /> <br />
+Broken windows are small customer experience issues that, if multiplied, significantly erode consumer trust. If you encounter a broken window, it’s our responsibility to fix it so that our consumers' trust is not affected. <br /> <br />
 
 We are obsessed with shipping an experience that is easy to use, functional and transpires love for the user in every detail. We make sure to guide users through screens with very smooth transitions, to deliver amazing moments through micro animations and videos, and we do all this without adding cognitive overload to the users or making the applications slower. 
       </p>
     ),
- "Customer obsession" : <p>
+ "Consumer obsession" : <p>
    <ul className="list-disc">
      <li>
    We are building a global product, not just shipping a product globally.
      </li>
      <li>
-We design and build to solve customer problems. 
+We design and build to solve consumer problems. 
      </li>
      <li>
 We don’t build anything for anyone.
      </li>
      <li>
-We don’t think of location as our only customer dimension. 
+We don’t think of location as our only consumer dimension. 
      </li>
      <li>
-We optimise for the customer, not for the market.
+We optimise for the consumer, not for the market.
      </li>
      <li>
-We strive for a one-to-one relationship with each customer, enabled by a global platform.
+We strive for a one-to-one relationship with each consumer, enabled by a global platform.
      </li>
    </ul>
 
@@ -58,7 +58,7 @@ We strive for a one-to-one relationship with each customer, enabled by a global 
 
 This global platform mentality is critical to Pandora’s architecture and future success. Thus, we should proactively prepare for more global growth through migrations and mergers.  <br />  <br />
 
-Each successful merger increases our insights, diversity of thought within our teams, and ultimately customer value for our platform. <br />  <br />
+Each successful merger increases our insights, diversity of thought within our teams, and ultimately consumer value for our platform. <br />  <br />
 
 We build a playbook and a set of products that allows every platform to merge effectively into Pandora and that will allow successful and fast new market launches.
 
