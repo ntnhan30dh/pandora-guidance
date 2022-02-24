@@ -17,7 +17,7 @@ const Header = (props) => {
   const span1 = "my-auto  text-white   h-full  ";
 
   return (
-    <header className="headerWrapper relative z-50 w-full sticky top-0 bg-pink  ">
+    <header className="headerWrapper relative z-50 w-full sticky top-0 bg-pink md:px-1/20 ">
       <nav className="nav md:flex justify-between items-center /w-full /flex-col flex-row /md:-mb-20">
         <div className="left w-28 md:w-32 lg:w-48">
           <Link to="/" className=" ">
@@ -27,7 +27,7 @@ const Header = (props) => {
         {/* desktop */}
 
         <Scrollspy
-          className={` desktop hidden md:flex  justify-around w-3/4 h-full `}
+          className={` desktop hidden md:flex  justify-between w-3/4 h-full `}
           items={["what", "why", "strategic", "principles"]}
           currentClassName="opacity-100 border-t-4 border-white "
         >
@@ -43,7 +43,7 @@ const Header = (props) => {
          
        
             <Link to="/#strategic" href="strategic" className={link1}>
-              <span className={span1}>Strategic pilars</span>
+              <span className={span1}>Strategic pillars</span>
             </Link>
          
        
@@ -71,7 +71,7 @@ const Header = (props) => {
             </Link>
 
             <Link onClick={toggleMenu} to="/#strategic" className={link}>
-              <span className={span}>Strategic pilars</span>
+              <span className={span}>Strategic pillars</span>
             </Link>
 
             <Link onClick={toggleMenu} to="/#principles" className={link}>

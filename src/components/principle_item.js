@@ -13,7 +13,7 @@ const Item = (props) => {
   const title = {
     1: "It’s better for us to build nothing than something *shitty.",
     2: "Understand the problem, validate your solution then scale. ",
-    3: "Build something that customers need.",
+    3: "Build something that consumers need.",
     4: "Be good platform citizens and always prioritise the greatest good.",
     5: "Celebrate failed products, but kill them ",
     6: "Trust over control",
@@ -35,7 +35,7 @@ const Item = (props) => {
   const mainText = {
     1: "We don’t just create viable products, we create functional, loved products that don’t compromise on customer experience. We do not release final products with ‘broken windows’! When we ship it, we ship it really, really, $%cking good! ",
     2: "Don’t build for scale or global at the start. Build for creating value. Make it work for your use case, then scale. If it doesn’t prove value, we kill it.",
-    3: "Be close to the customer. We don’t assume what customers want. We speak to our customers. Be specific and know who you build it for? And if it doesn’t prove value, we kill it.",
+    3: "Be close to the customer. We don’t assume what consumers want. We speak to our consumers. Be specific and know who you build it for? And if it doesn’t prove value, we kill it.",
     4: "We help each other and we understand that the sum is greater than its parts. Do your part well to make the platform successful.",
     5: "If we can not measure the success of a product, we do not release the product. If the product does not solve a clear, measurable customer or business need, we kill it to keep the user experience clean and the code maintainable. Regardless of the size of the product.",
     6: "Decisions should be made by the people best equipped to make them. We believe that the more decisions the teams make, the better it is for us. Do what needs to be done, seek forgiveness later.",

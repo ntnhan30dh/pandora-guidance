@@ -23,7 +23,7 @@ const Pilar = (props) => {
       <p>
       We constantly improve our customer experience by delivering high-quality products and fixing broken windows. <br /> <br />
 
-Broken windows are small customer experience issues that, if multiplied, significantly erode customer trust. If you encounter a broken window, it’s our responsibility to fix it so that our customers' trust is not affected. <br /> <br />
+Broken windows are small customer experience issues that, if multiplied, significantly erode customer trust. If you encounter a broken window, it’s our responsibility to fix it so that our consumers' trust is not affected. <br /> <br />
 
 We are obsessed with shipping an experience that is easy to use, functional and transpires love for the user in every detail. We make sure to guide users through screens with very smooth transitions, to deliver amazing moments through micro animations and videos, and we do all this without adding cognitive overload to the users or making the applications slower. 
       </p>
