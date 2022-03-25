@@ -43,7 +43,7 @@ const Header = (props) => {
          
        
             <Link to="/#strategic" href="strategic" className={link1}>
-              <span className={span1}>Strategic pillars</span>
+              <span className={span1}>Strategic Pillars</span>
             </Link>
          
        
@@ -71,7 +71,7 @@ const Header = (props) => {
             </Link>
 
             <Link onClick={toggleMenu} to="/#strategic" className={link}>
-              <span className={span}>Strategic pillars</span>
+              <span className={span}>Strategic Pillars</span>
             </Link>
 
             <Link onClick={toggleMenu} to="/#principles" className={link}>

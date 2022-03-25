@@ -15,7 +15,7 @@ const Pilar = (props) => {
   const pic = {
     "Quality" : quality,
     "Consumer obsession" : obsession,
-    "Platform" : platform,
+    "Global Platform" : platform,
     "Team" : team
   }
   const pText = {
@@ -29,7 +29,7 @@ We are obsessed with shipping an experience that is easy to use, functional and 
       </p>
     ),
  "Consumer obsession" : <p>
-   <ul className="list-disc">
+   <ul className="/list-disc">
      <li>
    We are building a global product, not just shipping a product globally.
      </li>
@@ -42,9 +42,7 @@ We don’t build anything for anyone.
      <li>
 We don’t think of location as our only consumer dimension. 
      </li>
-     <li>
-We optimise for the consumer, not for the market.
-     </li>
+  
      <li>
 We strive for a one-to-one relationship with each consumer, enabled by a global platform.
      </li>
@@ -53,7 +51,7 @@ We strive for a one-to-one relationship with each consumer, enabled by a global 
 
 
  </p>,
-     "Platform" : <p>
+     "Global Platform" : <p>
        Merging with platforms and launching new countries will remain a critical priority for Pandora. <br />  <br />
 
 This global platform mentality is critical to Pandora’s architecture and future success. Thus, we should proactively prepare for more global growth through migrations and mergers.  <br />  <br />
