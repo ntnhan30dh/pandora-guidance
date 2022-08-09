@@ -46,8 +46,6 @@ const IndexPage = () => {
     <Strategy/>
     <Principle/>  
   </StyleProvider>
-    
-    
     </div> 
     : <Login setLoginState={setLoginState} /> 
   )
