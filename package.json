@@ -17,7 +17,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "framer-motion": "^4.1.17",
-    "gatsby": "^3.6.2",
+    "gatsby": "^4.24.1",
     "gatsby-background-image": "^1.5.3",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-image": "^2.24.0",
