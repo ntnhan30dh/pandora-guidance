@@ -33,7 +33,7 @@ const Header = (props) => {
         >
        
             <Link to="/#what" href="what" className={link1}>
-              <span className={span1}>What is Pandora?</span>
+              <span className={span1}>What is Pandora</span>
             </Link>
          
        
