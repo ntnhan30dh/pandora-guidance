@@ -17,7 +17,7 @@ const Header = (props) => {
   const span1 = "my-auto  text-white   h-full  ";
 
   return (
-    <header className="headerWrapper relative z-50 w-full sticky top-0 bg-pink md:px-1/20 ">
+    <header className="headerWrapper relative z-50 w-full sticky top-0 bg-pink md:px-1/20 ">    
       <nav className="nav md:flex justify-between items-center /w-full /flex-col flex-row /md:-mb-20">
         <div className="left w-28 md:w-32 lg:w-48">
           <Link to="/" className=" ">

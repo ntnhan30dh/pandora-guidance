@@ -11,16 +11,16 @@ class Auth {
 
   userProfile;
 
-  login = async () => {
-    console.log("auth2 run");
-    let auth2 = await window.gapi.auth2.getAuthInstance();
-     console.log("auth2", auth2);
-    await auth2.signIn();
-    let authResult = await auth2.currentUser.get().getAuthResponse();
-    console.log("authResult", authResult);
-    
-    if(authResult.expires_at){
-        let expiresAt = authResult.expires_at*0.001 + 2600000
+  login = async (exp) => {
+   // console.log("auth2 run");
+   // let auth2 = await window.gapi.auth2.getAuthInstance();
+  //   console.log("auth2", auth2);
+   // await auth2.signIn();
+   // let authResult = await auth2.currentUser.get().getAuthResponse();
+   // console.log("authResult", authResult);
+    // let expires_at = 
+    if(exp){
+        let expiresAt = exp + 2600000
       localStorage.setItem("expires_at", expiresAt);
        console.log("localStorage", localStorage);
       
@@ -31,7 +31,7 @@ class Auth {
       alert("You dont have access to this site.");
       
     }
-    await auth2.disconnect();
+   // await auth2.disconnect();
   };
 
   handleAuthentication(props) {

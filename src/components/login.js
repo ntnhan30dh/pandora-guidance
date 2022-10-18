@@ -1,30 +1,35 @@
-import React, { useEffect } from "react";
+import React from "react";
 //import { Fragment } from "react";
-import Auth from '../constants/auth';
+import Auth from "../constants/auth";
+import { GoogleLogin } from "@react-oauth/google";
+import jwt_decode from "jwt-decode";
 
 const auth = new Auth();
 const Login = (props) => {
-  const  loginHandle  =  async () => {
-  await  auth.login();
-  props.setLoginState()
+  const login2handle = async (credentialResponse) =>{
+    const decoded = jwt_decode(credentialResponse.credential);
+    const exp = decoded.exp
+    await auth.login(exp);
+    props.setLoginState();
+    console.log("credentialResponse",credentialResponse);
   }
-  useEffect( () => {
-      window.gapi.load('auth2', () => {
-              window.gapi.auth2.init({
-              client_id: process.env.GATSBY_APP_CLIENT_ID
-          }).then(() => (error) => {
-            console.log(error)
-           }) 
-          }) 
-    
-  })
-    return (
-      
-      (typeof window !== 'undefined') && <div className="h-screen w-screen flex">
-        <button onClick={loginHandle} className="text-black m-auto bg-green px-10 py-4 rounded-custom"> <h2> Login</h2></button>
+ 
+  return (
+    typeof window !== "undefined" && (
+      <div className="h-screen w-screen flex justify-center items-center">
+        <GoogleLogin
+          onSuccess={(credentialResponse) => {
+            login2handle(credentialResponse)
+          }}
+          onError={() => {
+            console.log("Login Failed");
+          }}
+          useOneTap
+        />
+        
       </div>
     )
-  
-}
+  );
+};
 
 export default Login;
