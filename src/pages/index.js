@@ -29,11 +29,11 @@ const IndexPage = () => {
 
   return (
     <GoogleOAuthProvider clientId={process.env.GATSBY_APP_CLIENT_ID}>
+      
+          <title>Pandora Guidance</title>
+     
    { isAuthenticated ?
       <div className="pageWrapper ">
-        <head>
-          <title>Pandora Guidance</title>
-        </head>
         <MenuProvider>
           <Header />
         </MenuProvider>

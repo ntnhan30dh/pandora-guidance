@@ -18,6 +18,7 @@ const Header = (props) => {
 
   return (
     <header className="headerWrapper relative z-50 w-full sticky top-0 bg-pink md:px-1/20 ">    
+    
       <nav className="nav md:flex justify-between items-center /w-full /flex-col flex-row /md:-mb-20">
         <div className="left w-28 md:w-32 lg:w-48">
           <Link to="/" className=" ">
@@ -86,9 +87,9 @@ const Header = (props) => {
           role="button"
           tabIndex={-1}
         >
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
         </div>
       </nav>
     </header>

@@ -15,7 +15,7 @@ const Item = (props) => {
   const data = useData();
  // const principle = data.data.allWpPrinciple.edges.filter(p=>p.node.title==="Principle1")[0].node
  const principle =(name)=>{
-  console.log("data", data)
+  // console.log("data", data)
   return data.data.allWpPrinciple.edges.filter(p=>p.node.title===name)[0].node
  }
 

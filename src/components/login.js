@@ -11,7 +11,7 @@ const Login = (props) => {
     const exp = decoded.exp
     await auth.login(exp);
     props.setLoginState();
-    console.log("credentialResponse",credentialResponse);
+    // console.log("credentialResponse",credentialResponse);
   }
  
   return (
