@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/logo.png";
 import { Link } from "gatsby";
-import { useMenu, useMenuUpdate } from "../components/menuContext";
+import { useMenu, useMenuUpdate } from "../components/context/menuContext";
 import Scrollspy from "react-scrollspy";
 
 const Header = (props) => {

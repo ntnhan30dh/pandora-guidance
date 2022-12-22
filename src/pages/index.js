@@ -3,7 +3,7 @@ import "../styles/index.scss";
 import "../styles/global.css";
 import "semantic-ui-css/semantic.min.css";
 
-import { MenuProvider } from "../components/menuContext";
+import { MenuProvider } from "../components/context/menuContext";
 import { StyleProvider } from "../components/styleContext";
 import Login from "../components/login";
 //import Logout from "../components/logout";

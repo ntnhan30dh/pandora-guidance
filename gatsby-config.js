@@ -78,6 +78,67 @@ module.exports = {
           },
         },
       },
+
+      {
+        /**
+         * First up is the WordPress source plugin that connects Gatsby
+         * to your WordPress site.
+         *
+         * visit the plugin docs to learn more
+         * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md
+         *
+         */
+        resolve: `gatsby-source-wordpress`,
+        options: {
+          // the only required plugin option for WordPress is the GraphQL url.
+  
+          url: process.env.WPGRAPHQL_URL || `https://dhpandoraguide.wpengine.com/graphql`,
+          //Maybe it takes sometime for custom post to be available on GraphQl
+          type: {
+            // Page: {
+            //   exclude: true,
+            // },
+            Comment: {
+              exclude: true,
+            },
+            MediaItem: {
+              localFile: {
+                requestConcurrency: 50,
+              },
+              createFileNodes: false,
+            },
+            ContentType: {
+              exclude: true,
+            },
+            MenuItem: {
+              exclude: true,
+            },
+            Menu: {
+              exclude: true,
+            },
+            Taxonomy: {
+              exclude: true,
+            },
+            UserRole: {
+              exclude: true,
+            },
+            PostFormat: {
+              exclude: true,
+            },
+          },
+          schema: {
+            timeout: 1000000,
+            perPage: 10,
+            requestConcurrency: 5,
+          },
+  
+          html: {
+            createStaticFiles: false,
+            useGatsbyImage: false,
+          },
+        },
+      },
   
   ],
 };
+
