@@ -20,8 +20,22 @@ const data = useStaticQuery(graphql`
       allWpPage {
         edges {
           node {
+            titleandcontent {
+              title
+              content
+            }
             title
-            content
+          }
+        }
+      }
+      allWpPrinciple {
+        edges {
+          node {
+            titleandcontent {
+              title
+              content
+            }
+            title
           }
         }
       }
