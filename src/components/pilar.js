@@ -6,69 +6,23 @@ import quality from "../images/quality.png";
 import obsession from "../images/obsession.png";
 import platform from "../images/platform.png";
 import team from "../images/team.png";
+import { useData } from "./context/dataContext";
+
 
 const Pilar = (props) => {
   const style = useStyle()
   const [show, setShow] = useState(props.state);
   const rotate = show ? "rotate-90" : "";
+  const data = useData();
+  const pilarItem =(name)=>{
+    return data.data.allWpStrategy.edges.filter(p=>p.node.title===name)[0].node
+   }
 
   const pic = {
     "Quality" : quality,
     "Consumer obsession" : obsession,
     "Global Platform" : platform,
     "Team" : team
-  }
-  const pText = {
-    "Quality": (
-      <p>
-      We constantly improve our customer experience by delivering high-quality products and fixing broken windows. <br /> <br />
-
-Broken windows are small customer experience issues that, if multiplied, significantly erode consumer trust. If you encounter a broken window, it’s our responsibility to fix it so that our consumers' trust is not affected. <br /> <br />
-
-We are obsessed with shipping an experience that is easy to use, functional and transpires love for the user in every detail. We make sure to guide users through screens with very smooth transitions, to deliver amazing moments through micro animations and videos, and we do all this without adding cognitive overload to the users or making the applications slower. 
-      </p>
-    ),
- "Consumer obsession" : <p>
-   <ul className="/list-disc">
-     <li>
-   We are building a global product, not just shipping a product globally.
-     </li>
-     <li>
-We design and build to solve consumer problems. 
-     </li>
-     <li>
-We don’t build anything for anyone.
-     </li>
-     <li>
-We don’t think of location as our only consumer dimension. 
-     </li>
-  
-     <li>
-We strive for a one-to-one relationship with each consumer, enabled by a global platform.
-     </li>
-   </ul>
-
-
-
- </p>,
-     "Global Platform" : <p>
-       Merging with platforms and launching new countries will remain a critical priority for Pandora. <br />  <br />
-
-This global platform mentality is critical to Pandora’s architecture and future success. Thus, we should proactively prepare for more global growth through migrations and mergers.  <br />  <br />
-
-Each successful merger increases our insights, diversity of thought within our teams, and ultimately consumer value for our platform. <br />  <br />
-
-We build a playbook and a set of products that allows every platform to merge effectively into Pandora and that will allow successful and fast new market launches.
-
-     </p>,
-     "Team" : <p>
-      We are building an awesome product that people love, and for us to continue growing, we are looking for more awesome teammates to join us on our mission. <br /> <br />
-      We are on the hunt for innovative people with fresh ideas who challenge the status quo. We want teammates who take on challenges, strive for a sense of ownership and are comfortable dealing with ambiguity and change. <br /> <br />
-      In our supportive work environment you will be encouraged to celebrate failures as well as successes, as they both take an equally important role of shaping our path. <br /> <br />
-      It’s true what they say, great teams make great products! 
-
-     </p>
-    
   }
   
 
@@ -95,8 +49,10 @@ We build a playbook and a set of products that allows every platform to merge ef
         </button>
       </div>
      { show && <div className={`text text-center md:text-left md:flex ${style.px} ${style.text.p} my-10`}>
-        <div className="md:w-2/3 md:pr-1/20 md:mt-10">
-        { pText[props.name]}
+        <div className="md:w-2/3 md:pr-1/20 md:mt-10"
+         dangerouslySetInnerHTML={{ __html:   pilarItem(props.name).titleandcontent.content }}
+        
+        >
         </div>
       <div className="w-1/3">
             <img

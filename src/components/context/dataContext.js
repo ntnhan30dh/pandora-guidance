@@ -39,6 +39,17 @@ const data = useStaticQuery(graphql`
           }
         }
       }
+      allWpStrategy {
+        edges {
+          node {
+            title
+            titleandcontent {
+              title
+              content
+            }
+          }
+        }
+      }
     }
   `);
   return (
